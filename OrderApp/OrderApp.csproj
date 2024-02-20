@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="QuoterApp">
+      <HintPath>..\..\QuoterApp\QuoterApp\bin\Debug\netcoreapp3.1\QuoterApp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
