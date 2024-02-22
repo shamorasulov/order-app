@@ -8,8 +8,6 @@ namespace OrderApp
 {
     internal class Program
     {
-
-
         static void Main(string[] args)
         {
             var _random = new Random();
@@ -17,8 +15,8 @@ namespace OrderApp
             {
                 var order = new MarketOrder
                 {
-                    InstrumentId = Utils.RandomString(10),
-                    Price = Math.Round((_random.NextDouble() * 1000), 3),
+                    InstrumentId = "BA79603015", //Utils.RandomString(10),
+                    Price = Math.Round(_random.NextDouble() * 1000, 3),
                     Quantity = _random.Next(1, 1000)
                 };
 
@@ -29,7 +27,7 @@ namespace OrderApp
             }
 
 
-
+            Console.ReadLine();
         }
     }
 }
